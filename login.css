@@ -1,0 +1,77 @@
+html, body {
+    overflow: scroll;
+    overflow-x: hidden;
+    height:100%;
+    width:100%;
+    background-image: url("https://wallpaperaccess.com/full/1567481.png")
+}
+::-webkit-scrollbar {
+    width: 0px;  /* Remove scrollbar space */
+    background: transparent;  /* Optional: just make scrollbar invisible */
+}
+/* Optional: show position indicator in red */
+::-webkit-scrollbar-thumb {
+    background: #FF0000;
+}
+.container{
+    margin-top: 10%;
+/* background:red; */
+display:flex;
+justify-content:center;
+}
+.holder{
+    width: 50%;
+    height:auto;
+    background-color: white;
+    border:1px solid white;
+    padding: 20px;
+    align-items:center;
+}
+.subHolder{
+    width: 100%;
+    height: auto;
+    margin-left:20px;
+    border:1px solid gray;
+    padding: 6px;
+    overflow-y: scroll;
+    text-align:center;
+
+}
+.form-control{
+    margin-bottom: 15px;
+    align-items:center;
+    margin-top: 20px;
+
+}
+.mainHolder{
+    display: flex;
+    width:600px;
+    height: 400px;
+    padding: 20px;
+     justify-content: space-between;
+     box-shadow: 0 0 10px;
+
+}
+.products{
+    height: auto;
+    width: 100%;
+    background-color: white;
+    margin-bottom:2px;
+
+}
+#btnS{
+    margin-top: 20px;   
+    width: 100%;
+}
+.imgHolder{
+    height:92px;
+    width:92px;
+    margin-bottom:20px;
+    margin-left:60px;
+   
+
+}
+.imgHolder img{
+    height:auto;
+    width:100%;
+}
