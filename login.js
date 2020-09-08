@@ -28,18 +28,15 @@ formSub.addEventListener('click', function() {
           var json = JSON.stringify(eval(response.data));
           console.log(json);
 
-          if (json == `{"auth":true}`) {
-            console.log('SUCCESS');
+          // if (json == `{"auth":true}`) {
+          //   console.log('SUCCESS');
 
-            
-            // import { prodwin } from './win.js';
-            // prodwin();
 
             const myModule = require('./win');
             myModule.prodwin();
           
             
-          }
+          // }
 
         })
         .catch(function (error) {
