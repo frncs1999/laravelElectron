@@ -66,17 +66,18 @@ function edit(name){
         var id = response.data.id;
         formUpd.addEventListener('click', function() { 
         
-            axios.put('http://localhost:8000/api/product/upd/'+id+'', {
+            axios.post('http://localhost:8000/api/product/upd/'+id+'', {
                     productname: productname.value,
                     productdes: productdes.value
                 })
                 .then(response => {
                     console.log(response);
+                    getCurrentWindow().reload()
                 })
                 .catch(error => {
                     console.log(err);
                 });
-                getCurrentWindow().reload()
+                
         });
         
 
@@ -102,7 +103,6 @@ function del(name){
             .then(function (response) {
               
                 console.log(response.data.message)
-          
                 getCurrentWindow().reload()
           
             })
