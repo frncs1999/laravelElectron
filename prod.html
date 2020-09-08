@@ -7,6 +7,13 @@
   src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
   integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs="
   crossorigin="anonymous"></script>
+  <script>
+    try {
+        $ = jQuery = module.exports;
+        // If you want module.exports to be empty, uncomment:
+        // module.exports = {};
+    } catch(e) {}
+</script>
 
     <meta https-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
@@ -22,9 +29,14 @@
             <input required id="productname" type="text" name="productname" class="form-control" placeholder='Product Name'>
             <input required id="productdes" type="text" name="productdes" class="form-control" placeholder='Product Description'>
             <label class="checkbox"></label>
-            <button id="formAdd" type="submit" class="btn btn-lg btn-primary btn-block" type="button">Submit</button>
+
+      
+              <button id="formAdd" class="btn btn-lg btn-primary btn-block" type="button">Submit</button>
+              <button id="formUpd" class="btn btn-lg btn-primary btn-block" type="button">Update</button>
+      
           </form>
         </div>
+        <div class ="subHolder"></div>
     </div>
 
   </body>
